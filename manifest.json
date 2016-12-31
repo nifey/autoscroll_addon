@@ -1,0 +1,12 @@
+{
+  "manifest_version" : 2,
+  "name": "Auto scroll",
+  "version":"1.0",
+  "description" : "This add on auto scrolls the web page if it is a wikipedia page",
+  "content_scripts": [
+    {
+      "matches": ["*://*.wikipedia.org/*"],
+      "js": ["scroll.js"]
+    }
+  ]
+}
